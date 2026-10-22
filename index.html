@@ -1,140 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sid – Formateur Primavera P6 | Planification de projets industriels</title>
-<meta name="description" content="Formation Primavera P6 pour les projets de construction industrielle, pétrole et gaz, en Algérie : planification, ressources, coûts, suivi d’avancement.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formation Primavera P6</title>
+
 <style>
-:root{--bg:#f3f5f7;--sf:#ffffff;--tx:#14212b;--mu:#556572;--ac:#14506e;--hl:#c98a00;--bd:#d4dce2;--hero:#12304a;--hx:#ffffff;--hm:#b9cbd8;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light dark;
-font-family:system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1519;--sf:#182027;--tx:#e6edf1;--mu:#93a4af;--ac:#6dbbdd;--hl:#e2a926;--bd:#2c3a44;--hero:#0b1a27;--hm:#9fb4c3}}
-:root[data-theme="dark"]{--bg:#0f1519;--sf:#182027;--tx:#e6edf1;--mu:#93a4af;--ac:#6dbbdd;--hl:#e2a926;--bd:#2c3a44;--hero:#0b1a27;--hm:#9fb4c3}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);line-height:1.6;font-size:16px}
-a{color:var(--ac)}
-.w{max-width:1080px;margin:0 auto;padding:0 20px}
-.hero{background:var(--hero);color:var(--hx);padding:56px 0 64px}
-.hero .w{display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
-.tag{display:inline-block;color:var(--hl);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
-h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin:10px 0 14px}
-.hero p{color:var(--hm);font-size:18px;max-width:52ch;margin:0 0 24px}
-.btn{display:inline-block;background:var(--hl);color:#1a1300;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:6px;margin-right:10px}
-.btn.o{background:transparent;color:var(--hx);border:1px solid var(--hm)}
-.gantt{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:18px}
-.gantt b{display:block;font-size:12px;color:var(--hm);margin-bottom:10px;font-weight:600;letter-spacing:.04em}
-.g{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:center;margin:8px 0;font-size:12px;color:var(--hm)}
-.g i{display:block;height:12px;border-radius:3px;background:#5f8fae}
-.g i.c{background:var(--hl)}
-.t{position:relative;height:100%;min-height:12px}
-.t i{position:absolute;top:0}
-section{padding:56px 0}
-h2{font-size:28px;margin:0 0 8px}
-.lead{color:var(--mu);max-width:62ch;margin:0 0 28px}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.card{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:20px}
-.card h3{margin:0 0 8px;font-size:18px}
-.card p{margin:0;color:var(--mu);font-size:15px}
-.n{color:var(--hl);font-weight:800;font-size:13px;letter-spacing:.06em}
-.alt{background:var(--sf);border-block:1px solid var(--bd)}
-ul.k{margin:0;padding-left:20px;color:var(--mu)}
-ul.k li{margin:6px 0}
-.two{display:grid;gap:36px;grid-template-columns:1fr 1fr}
-.ct{background:var(--hero);color:var(--hx);border-radius:10px;padding:32px}
-.ct p{color:var(--hm);margin:0 0 18px}
-.ct .btn.o{margin-top:6px}
-footer{padding:28px 0;color:var(--mu);font-size:13px}
-@media(max-width:780px){.hero .w,.two{grid-template-columns:1fr}.hero{padding:40px 0 48px}section{padding:40px 0}}
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
 </style>
 </head>
+
 <body>
-<header class="hero">
-  <div class="w">
-    <div>
-      <span class="tag">Formation Primavera P6</span>
-      <h1>Planifier et piloter vos projets industriels avec Primavera P6</h1>
-      <p>Formations pratiques pour les équipes de planification des projets de construction industrielle, pétrole et gaz, par un praticien de la planification et de l’estimation de projets EPC.</p>
-      <a class="btn" href="#contact">Demander un programme</a><a class="btn o" href="#formations">Voir les formations</a>
-    </div>
-    <div class="gantt" aria-hidden="true">
-      <b>EXEMPLE DE PLANNING (CHEMIN CRITIQUE EN JAUNE)</b>
-      <div class="g">Ingénierie<div class="t"><i style="left:0;width:30%"></i></div></div>
-      <div class="g">Approvisionnement<div class="t"><i style="left:18%;width:34%"></i></div></div>
-      <div class="g">Génie civil<div class="t"><i class="c" style="left:26%;width:28%"></i></div></div>
-      <div class="g">Montage<div class="t"><i class="c" style="left:50%;width:30%"></i></div></div>
-      <div class="g">Mise en service<div class="t"><i class="c" style="left:78%;width:22%"></i></div></div>
-    </div>
-  </div>
+
+<header>
+    <h1>Formation Primavera P6</h1>
+    <p>Planification • Ordonnancement • Gestion de Projets</p>
 </header>
 
-<section id="apropos">
-  <div class="w two">
-    <div>
-      <h2>Un formateur issu du terrain</h2>
-      <p class="lead">Je travaille sur la planification et l’estimation de projets EPC, notamment de raffineries et d’infrastructures pétrolières en Algérie. Mes formations partent de situations réelles de chantier, pas de cas théoriques.</p>
-    </div>
-    <ul class="k">
-      <li>Structures de projet EPC : WBS, corps d’état, tâches et sous-tâches</li>
-      <li>Disciplines de la construction industrielle : génie civil, charpente, tuyauterie, soudage, électricité, instrumentation, mise en service</li>
-      <li>Vocabulaire et pratiques du contexte parapétrolier algérien</li>
-      <li>Échange de données avec d’autres outils (import et export XER, XML)</li>
+<section>
+
+<div class="card">
+    <h2>Bienvenue</h2>
+    <p>
+        Bienvenue sur la plateforme Formation Primavera P6 de
+        Sid Ahmed Chikh.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Objectifs</h2>
+    <ul>
+        <li>Créer un projet Primavera P6</li>
+        <li>Construire une WBS professionnelle</li>
+        <li>Créer les activités</li>
+        <li>Définir les relations logiques</li>
+        <li>Planifier les ressources</li>
+        <li>Suivre l'avancement des travaux</li>
+        <li>Produire des rapports et tableaux de bord</li>
     </ul>
-  </div>
-</section>
+</div>
 
-<section id="formations" class="alt">
-  <div class="w">
-    <h2>Formations</h2>
-    <p class="lead">Des modules indépendants ou un parcours complet, adaptés au niveau de vos équipes. Programmes, durées et tarifs sur demande.</p>
-    <div class="grid">
-      <div class="card"><span class="n">MODULE 1</span><h3>Fondamentaux de Primavera P6</h3><p>Interface, EPS, OBS, calendriers, création d’un projet, activités et relations logiques.</p></div>
-      <div class="card"><span class="n">MODULE 2</span><h3>Planification d’un projet EPC</h3><p>Construire un WBS, enchaîner les corps d’état, contraintes, chemin critique, optimisation du planning.</p></div>
-      <div class="card"><span class="n">MODULE 3</span><h3>Ressources et coûts</h3><p>Affectation des ressources, rendements, courbes de charge, budgets et prévisionnel de coûts.</p></div>
-      <div class="card"><span class="n">MODULE 4</span><h3>Suivi d’avancement</h3><p>Baselines, mise à jour, avancement physique, analyse des écarts et reporting.</p></div>
-      <div class="card"><span class="n">MODULE 5</span><h3>Import, export et échanges</h3><p>Fichiers XER et XML, reprise de plannings existants, structuration des données depuis Excel.</p></div>
-      <div class="card"><span class="n">SUR MESURE</span><h3>Formation en entreprise</h3><p>Programme construit autour de vos projets et de vos pratiques, dans vos locaux ou à distance.</p></div>
-    </div>
-  </div>
-</section>
+<div class="card">
+    <h2>Contenu disponible</h2>
+    <ul>
+        <li>Cours Primavera P6</li>
+        <li>Études de cas réelles</li>
+        <li>Exercices pratiques</li>
+        <li>Modèles WBS</li>
+        <li>Plannings industriels</li>
+    </ul>
+</div>
 
-<section id="public">
-  <div class="w two">
-    <div>
-      <h2>À qui s’adressent ces formations</h2>
-      <ul class="k">
-        <li>Planificateurs et ingénieurs planning</li>
-        <li>Chefs de projet et conducteurs de travaux</li>
-        <li>Responsables d’estimation et de contrôle de coûts</li>
-        <li>Équipes de maîtrise d’ouvrage et de bureaux d’études</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Ma méthode</h2>
-      <ul class="k">
-        <li>Exercices pratiques sur des projets industriels</li>
-        <li>Supports et modèles de plannings réutilisables</li>
-        <li>Progression adaptée à votre niveau, du débutant à l’avancé</li>
-        <li>Suivi après la formation sur demande</li>
-      </ul>
-    </div>
-  </div>
-</section>
+<div class="card">
+    <h2>GitHub</h2>
+    <p>
+        Dépôt du projet :
+        <a href="https://github.com/sidahmed-chikh/Formation-P6">
+            Formation-P6
+        </a>
+    </p>
+</div>
 
-<section id="contact" class="alt">
-  <div class="w">
-    <div class="ct">
-      <h2>Parlons de votre besoin de formation</h2>
-      <p>Indiquez-moi votre secteur, le niveau de vos équipes et vos objectifs : je vous réponds avec un programme adapté.</p>
-      <a class="btn" href="mailto:sidamed50@zohomail.com">sidamed50@zohomail.com</a>
-      <a class="btn o" href="https://www.linkedin.com/in/votre-profil">Profil LinkedIn</a>
-    </div>
-  </div>
 </section>
 
 <footer>
-  <div class="w">© Sid, formateur. Primavera P6 est une marque d’Oracle ; ce site est indépendant et n’est pas affilié à Oracle.</div>
+    © 2026 Sid Ahmed Chikh | Formation Primavera P6
 </footer>
+
 </body>
 </html>
